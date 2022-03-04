@@ -10,7 +10,7 @@ import {BsChatLeftDots} from 'react-icons/bs'
 const nav = () => {
   return (
     <nav>
-      <a href="#"><AiOutlineHome /></a>
+      <a href="#" className="active"><AiOutlineHome /></a>
       <a href="#about"><AiOutlineUsergroupAdd /></a>
       <a href="#experience"><BiBrain /></a>
       <a href="#services"><MdOutlineElectricalServices /></a>
