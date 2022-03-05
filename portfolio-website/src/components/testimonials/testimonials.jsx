@@ -1,43 +1,46 @@
 import React from 'react'
 import './testimonials.css'
-import Av1 from '../../assets/avatar1.png'
-import Av2 from '../../assets/avatar2.png'
-import Av3 from '../../assets/avatar3.png'
-import Av4 from '../../assets/avatar4.png'
-import Av5 from '../../assets/avatar5.png'
+import data from './testimonialData'
 
-const data = [
-  {
-    avatar: Av1,
-    name: "Kolapo Ishola",
-    Review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque dolores labore culpa tempora pariatur, nihil quod corrupti inventore ex assumenda velit, provident eos enim dolorum voluptatibus blanditiis alias voluptatem!"
-  },
-  {
-    avatar: Av2,
-    name: "Kolapo Ishola",
-    Review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque dolores labore culpa tempora pariatur, nihil quod corrupti inventore ex assumenda velit, provident eos enim dolorum voluptatibus blanditiis alias voluptatem!"
-  },
-  {
-    avatar: Av3,
-    name: "Kolapo Ishola",
-    Review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque dolores labore culpa tempora pariatur, nihil quod corrupti inventore ex assumenda velit, provident eos enim dolorum voluptatibus blanditiis alias voluptatem!"
-  },
-  {
-    avatar: Av4,
-    name: "Kolapo Ishola",
-    Review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque dolores labore culpa tempora pariatur, nihil quod corrupti inventore ex assumenda velit, provident eos enim dolorum voluptatibus blanditiis alias voluptatem!"
-  },
-  {
-    avatar: Av5,
-    name: "Kolapo Ishola",
-    Review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque dolores labore culpa tempora pariatur, nihil quod corrupti inventore ex assumenda velit, provident eos enim dolorum voluptatibus blanditiis alias voluptatem!"
-  }
-]
+// import Swiper core and required modules
+import { Pagination, Navigation } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 const testimonials = () => {
   return (
-    <div>Testimonials</div>
+    <section id="testimonials">
+      <h5>What Clients Are Saying</h5>
+      <h2>Testimonials</h2>
+      <Swiper className="container testimonials_container"
+            // install Swiper modules
+            modules={[Pagination, Navigation]}
+            spaceBetween={40}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+      >
+        {
+          data.map(({avatar, name, Review}, index) => {
+            return (
+              <SwiperSlide key={index} className="testimonial">
+                <div className="client_avatar">
+                  <img src={avatar} alt="" />
+                </div>
+                <h5 className="client_name">{name}</h5>
+                <small className="client_review">{Review}</small>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+    </section>
   )
 }
 
