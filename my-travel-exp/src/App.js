@@ -4,9 +4,6 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Card from './components/Card'
 import data from './components/data'
-// import Katie from './images/Katie.png'
-// import mountain from './images/mountain.png'
-// import wedding from './images/wedding.png'
 
 
 

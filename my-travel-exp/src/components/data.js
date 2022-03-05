@@ -1,6 +1,6 @@
-import Katie from './images/Katie.png'
-import mountain from './images/mountain.png'
-import wedding from './images/wedding.png'
+import Katie from '../images/Katie.png'
+import mountain from '../images/mountain.png'
+import wedding from '../images/wedding.png'
 
 export default [
     {
