@@ -14,45 +14,50 @@ const portfolio = () => {
             <img src={IMG1} alt="Zombiverze NFT" />
           </div>
           <h3>This is a portfolio item title</h3>
+          <div className="portfolio_item-cta">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="btn">Github</a>
           <a href="https://zombieverze.club" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
-
+          </div>
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG1} alt="Zombiverze NFT" />
           </div>
           <h3>This is a portfolio item title</h3>
+          <div className="portfolio_item-cta">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="btn">Github</a>
           <a href="https://zombieverze.club" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
-
+          </div>
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG1} alt="Zombiverze NFT" />
           </div>
           <h3>This is a portfolio item title</h3>
+          <div className="portfolio_item-cta">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="btn">Github</a>
           <a href="https://zombieverze.club" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
-
+          </div>
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG1} alt="Zombiverze NFT" />
           </div>
           <h3>This is a portfolio item title</h3>
+          <div className="portfolio_item-cta">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="btn">Github</a>
           <a href="https://zombieverze.club" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
-
+          </div>
         </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={IMG1} alt="Zombiverze NFT" />
           </div>
           <h3>This is a portfolio item title</h3>
+          <div className="portfolio_item-cta">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="btn">Github</a>
           <a href="https://zombieverze.club" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
-
+          </div>
         </article>
       </div>
     </section>
