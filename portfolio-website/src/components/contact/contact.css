@@ -5,8 +5,26 @@
     gap: 12%;
 }
 
-.contact_option {
+.contact_options {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+}
+
+.contact_option {
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.contact_option:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+}
+
+.contact_option-icon {
+    
 }
