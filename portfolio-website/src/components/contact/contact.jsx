@@ -10,6 +10,7 @@ const contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
       <div className="container contact_container">
+        <div className="contact_options">
         <article className="contact_option">
           <MdOutlineEmail />
           <h4>Email</h4>
@@ -28,7 +29,7 @@ const contact = () => {
           <h5>+2348098634567</h5>
           <a href="https://api.whatsapp.com/send?phone=+2348062702016" target="_blank" rel="nonreferrer">Send a Message</a>
         </article>
-      </div>
+        </div>
       {/* End of Contact Section */}
       <form action="">
         <input type="text" name="name" placeholder="Your Full Name" required />
@@ -36,6 +37,7 @@ const contact = () => {
         <textarea name="message" rows="7" placeholder="Your Message" required ></textarea>
         <button type="submit" className="btn btn-primary">Send Message</button>
       </form>
+      </div>
     </section>
   )
 }
