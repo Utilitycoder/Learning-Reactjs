@@ -12,13 +12,8 @@ export default function App() {
   const card = data.map(item => {
     return (
       <Card 
-        img={item.coverImg}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
-
+        Key={item.id}
+        item={item}
       />
     )
   })
@@ -27,7 +22,9 @@ export default function App() {
   <div>
     <Navbar />
     <Hero />
+    <section className="cards--list">
     {card}
+    </section>
   </div>
   )
 }

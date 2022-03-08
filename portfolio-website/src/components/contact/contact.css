@@ -55,3 +55,21 @@ input, textarea {
     color: var(--color-white);
 }
 
+/* ============= MEDIA QUERIES (MEDIUM DEVICES) =========== */
+
+@media screen and (max-width: 1024px) {
+    .container.container.contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+  }
+  
+  /* ============= MEDIA QUERIES (SMALL DEVICES) =========== */
+  
+  @media screen and (max-width: 600px) {
+    .container.contact_container {
+        width: var(--container-width-sm)
+    }
+  }
+

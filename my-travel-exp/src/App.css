@@ -12,10 +12,9 @@ nav {
   display: flex;
   padding: 20px 36px;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
-  background: #FFFFFF;
 }
 
-nav-logo {
+.nav-logo {
   max-width: 100px;
 }
 
@@ -41,14 +40,35 @@ section {
   margin-top: 0;
 }
 
+.cards--list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
 .card {
     width: 175px;
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+    position: relative;
 }
 
 .card--image {
     width: 100%;
     border-radius: 9px;
+    margin-bottom: 9px;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-price {
+  margin-top: auto;
 }
 
 .card--stats {
@@ -61,5 +81,19 @@ section {
 }
 
 .bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
   font-weight: bold;
 }
