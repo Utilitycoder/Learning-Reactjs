@@ -44,7 +44,7 @@ body {
   /*
   CHALLENGE: change the main color to one you like!
   */
-  --main-color: var(--snow);
+  --main-color: var(--blood);
   
    /* 
   CHALLENGE: change the font to one you think is cool
@@ -57,14 +57,13 @@ body {
   /* 
   BONUS CHALLENGE: adjust how many columns you'd like to have
   */
- column-count: 2;
+ column-count: 4;
  column-gap: 10px;
 }
 
 
 .img {
-  /* 
-  border-image: var(--sweets) 100;
-  */
+  border-image: var(--smoke) 100;
+
 
 }
