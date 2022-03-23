@@ -14,6 +14,7 @@ export default function App() {
       <Card 
         Key={item.id}
         item={item}
+        // {...item} This is spread object syntax and I won't need to pass it individually to my props
       />
     )
   })
@@ -28,4 +29,3 @@ export default function App() {
   </div>
   )
 }
-
