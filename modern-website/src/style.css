@@ -36,9 +36,6 @@
 
 
 body {
-  /*
-  CHALLENGE: change the background to one you like
-  */
   --background-image: var(--forest);
   
   /*
