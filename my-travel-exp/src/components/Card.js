@@ -4,7 +4,8 @@ import Star from '../images/star.png'
 
 
 export default function Card(props) {
-    let badgeText
+    let badgeText 
+
     if (props.item.openSpots === 0) {
         badgeText = "SOLD OUT"
     } else if (props.item.location === "Online") {
