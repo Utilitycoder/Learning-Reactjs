@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Meme() {
+function Meme(props) {
 
     const [meme, setMeme] = React.useState({
         topText: "",
@@ -46,7 +46,7 @@ function Meme() {
     }
 
     return (
-        <main>
+        <main className={props.darkMode ? "dark": ""}>
             <div className="form">
                 <input 
                     type="text"
