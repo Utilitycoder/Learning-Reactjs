@@ -1,4 +1,4 @@
-import { createContext } from 'react'
+import { createContext, Component } from 'react'
 
 const { Provider, Consumer } = createContext()
 
@@ -13,10 +13,9 @@ class UserContextProvider extends Component {
 
     render() {
         const {username} = this.state
-        const {changeUserName} = this.changeUserName
 
         return (
-            <Provider value={{username, changeUserName}}>
+            <Provider value={{username, changeUserName: this.changeUserName}}>
                 {this.props.children}
             </Provider>
         )
