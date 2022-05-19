@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {React, Component} from 'react'
+import Header from './Header'
+import  {UserContextConsumer} from './userContext'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    NewUserName: ""
+  }
+
+  handleChange = (e) => {
+    const {name, value } = e.target
+    this.setState({[name]: value})
+  }
+
+  render() {
+    return (
+      <div>
+        <Header /> 
+        <UserContextConsumer>
+          {({userName, changeUserName}) => (
+            <main>
+              <p className='main'> No new notifications, {userName}! 🎉</p>
+              <input 
+                type="text"
+                name="NewUserName"
+                placeholder='New Username'
+                value={this.state.NewUserName}
+                onChange={this.handleChange}
+              />
+              <button onClick={() => changeUserName(this.state.NewUserName)}></button>
+            </main>
+          )}
+        </UserContextConsumer>
+      </div>
+    )
+  }
 }
 
 export default App;
