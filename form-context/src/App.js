@@ -27,7 +27,7 @@ class App extends Component {
                 value={this.state.NewUserName}
                 onChange={this.handleChange}
               />
-              <button onClick={() => changeUserName(this.state.NewUserName)}></button>
+              <button onClick={() => changeUserName(this.state.NewUserName)}>Change Username</button>
             </main>
           )}
         </UserContextConsumer>
